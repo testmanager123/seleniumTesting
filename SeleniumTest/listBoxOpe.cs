@@ -22,6 +22,17 @@ namespace SeleniumTest
             ///identify month list box 
             IWebElement myMonth = myApp.FindElement(By.Id("month"));
 
+            ///capture data 
+            String mData = myMonth.Text;
+            Console.WriteLine("month data  is  :  " + mData);
+
+
+            System.Threading.Thread.Sleep(5000);
+            ///close drive
+            myApp.Close();
+            ///quit driver
+            myApp.Quit();
+
         }
     }
 }
